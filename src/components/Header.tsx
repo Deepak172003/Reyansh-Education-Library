@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { nav } from "../data/content";
+import { asset } from "../utils/asset";
 import "./Header.css";
 
 export default function Header() {
@@ -20,7 +21,7 @@ export default function Header() {
       <div className="header-row">
         <div className="shell header-inner">
           <NavLink to="/" className="brand" onClick={() => setOpen(false)}>
-            <img src="/brand/logo-icon.webp" alt="" className="brand-mark" width={36} height={34} />
+            <img src={asset("/brand/logo-icon.webp")} alt="" className="brand-mark" width={36} height={34} />
             <span className="brand-text">
               <strong>Reyansha</strong>
               <em>Library · 7 AM – 10 PM</em>

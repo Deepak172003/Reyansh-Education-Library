@@ -4,6 +4,7 @@ import Reveal from "../components/Reveal";
 import { aboutDescription, facilities } from "../data/content";
 import "./About.css";
 import useDocumentTitle from "../hooks/useDocumentTitle";
+import { asset } from "../utils/asset";
 
 const highlights = [
   { icon: UsersRound, title: "1,400+ members", copy: "Students and long-hour aspirants hold an active seat today." },
@@ -29,7 +30,7 @@ export default function About() {
           <p>{aboutDescription.intro}</p>
         </div>
         <div className="fade-up-in about-hero-img-wrap" style={{ animationDelay: "150ms" }}>
-          <img src="/gallery/exterior-signboard.webp" alt="Reyansha Library entrance signboard" className="about-hero-img" />
+          <img src={asset("/gallery/exterior-signboard.webp")} alt="Reyansha Library entrance signboard" className="about-hero-img" />
         </div>
       </div>
 
@@ -99,7 +100,7 @@ export default function About() {
       <section className="section">
         <div className="shell">
           <Reveal className="why-band">
-            <img src="/gallery/reception-desk.webp" alt="Reception desk at Reyansha Library" className="why-band-img" />
+            <img src={asset("/gallery/reception-desk.webp")} alt="Reception desk at Reyansha Library" className="why-band-img" />
             <div>
               <span className="section-kicker">Why Choose Us?</span>
               <h2>Three things members mention most</h2>

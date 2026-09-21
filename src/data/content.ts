@@ -1,3 +1,5 @@
+import { asset } from "../utils/asset";
+
 type NavItem = { label: string; to: string; children?: { label: string; to: string }[] };
 
 export const nav: NavItem[] = [
@@ -130,18 +132,18 @@ export const howToJoin = [
 ];
 
 export const galleryImages = [
-  { src: "/gallery/exterior-signboard-wide.webp", caption: "Entrance signboard, 2nd floor" },
-  { src: "/gallery/reading-room-1.webp", caption: "Reading room with AC seating" },
-  { src: "/gallery/reception-desk.webp", caption: "Reception desk" },
-  { src: "/gallery/reading-room-2.webp", caption: "Reading room, wood-floor section" },
-  { src: "/gallery/entrance-door.webp", caption: "Entrance — silence, please" },
-  { src: "/gallery/study-carrels.webp", caption: "Individual study carrels" },
-  { src: "/gallery/reading-room-3.webp", caption: "Reading room, bright section" },
-  { src: "/gallery/waiting-area.webp", caption: "Waiting area" },
-  { src: "/gallery/computer-desks.webp", caption: "Computer terminals" },
-  { src: "/gallery/covered-parking.webp", caption: "Covered parking corridor" },
-  { src: "/gallery/outdoor-parking.webp", caption: "Outdoor two-wheeler parking" },
-  { src: "/gallery/reading-room-4.webp", caption: "Reading room, main hall" },
+  { src: asset("/gallery/exterior-signboard-wide.webp"), caption: "Entrance signboard, 2nd floor" },
+  { src: asset("/gallery/reading-room-1.webp"), caption: "Reading room with AC seating" },
+  { src: asset("/gallery/reception-desk.webp"), caption: "Reception desk" },
+  { src: asset("/gallery/reading-room-2.webp"), caption: "Reading room, wood-floor section" },
+  { src: asset("/gallery/entrance-door.webp"), caption: "Entrance — silence, please" },
+  { src: asset("/gallery/study-carrels.webp"), caption: "Individual study carrels" },
+  { src: asset("/gallery/reading-room-3.webp"), caption: "Reading room, bright section" },
+  { src: asset("/gallery/waiting-area.webp"), caption: "Waiting area" },
+  { src: asset("/gallery/computer-desks.webp"), caption: "Computer terminals" },
+  { src: asset("/gallery/covered-parking.webp"), caption: "Covered parking corridor" },
+  { src: asset("/gallery/outdoor-parking.webp"), caption: "Outdoor two-wheeler parking" },
+  { src: asset("/gallery/reading-room-4.webp"), caption: "Reading room, main hall" },
 ];
 
 export const testimonials = [

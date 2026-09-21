@@ -20,6 +20,7 @@ import TestimonialMarquee from "../components/TestimonialMarquee";
 import { facilities, galleryImages, testimonials, stats, contactDetails } from "../data/content";
 import "./Home.css";
 import useDocumentTitle from "../hooks/useDocumentTitle";
+import { asset } from "../utils/asset";
 
 const quickActions = [
   { icon: Armchair, label: "Book a Cabin", copy: "Reserve a numbered study cabin before you arrive." },
@@ -38,7 +39,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="hero hero-photo">
+      <section className="hero hero-photo" style={{ backgroundImage: `url(${asset("/gallery/hero-bg.webp")})` }}>
         <div className="hero-overlay" />
         <div className="shell hero-content fade-up-in">
           <span className="hero-eyebrow">Reyansha Library</span>

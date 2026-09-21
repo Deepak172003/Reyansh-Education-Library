@@ -5,6 +5,7 @@ import { membershipBenefits, membershipPlans, howToJoin } from "../data/content"
 import { openWhatsApp } from "../utils/whatsapp";
 import "./Membership.css";
 import useDocumentTitle from "../hooks/useDocumentTitle";
+import { asset } from "../utils/asset";
 
 export default function Membership() {
   useDocumentTitle("Membership Plans");
@@ -28,7 +29,7 @@ export default function Membership() {
           </div>
         </div>
         <div className="fade-up-in" style={{ animationDelay: "150ms" }}>
-          <img src="/gallery/entrance-door.webp" alt="Entrance to Reyansha Library" className="membership-hero-img" />
+          <img src={asset("/gallery/entrance-door.webp")} alt="Entrance to Reyansha Library" className="membership-hero-img" />
         </div>
       </div>
 

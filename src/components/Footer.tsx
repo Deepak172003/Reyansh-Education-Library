@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail, Navigation, ShieldCheck } from "lucide-react";
 import { contactDetails } from "../data/content";
+import { asset } from "../utils/asset";
 import "./Footer.css";
 
 export default function Footer() {
@@ -10,7 +11,7 @@ export default function Footer() {
         <div className="footer-brand">
           <div className="footer-brand-top">
             <span className="footer-logo-badge">
-              <img src="/brand/logo-icon.webp" alt="Reyansha Library logo" width={30} height={28} />
+              <img src={asset("/brand/logo-icon.webp")} alt="Reyansha Library logo" width={30} height={28} />
             </span>
             <div>
               <p className="footer-name">Reyansha Library</p>
