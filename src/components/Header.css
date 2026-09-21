@@ -1,0 +1,191 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+  transition: box-shadow 0.25s ease;
+}
+
+.header-scrolled {
+  box-shadow: 0 4px 20px rgba(12, 46, 74, 0.1);
+}
+
+.header-row {
+  display: flex;
+  align-items: stretch;
+}
+
+.header-inner {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  gap: 24px;
+  transition: padding 0.25s ease;
+}
+
+.header-scrolled .header-inner {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.brand-mark {
+  flex-shrink: 0;
+  object-fit: contain;
+  transition: width 0.25s ease, height 0.25s ease;
+}
+
+.header-scrolled .brand-mark {
+  width: 30px;
+  height: 28px;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+  font-family: var(--font-display);
+}
+
+.brand-text strong {
+  font-size: 1.05rem;
+  color: var(--green-900);
+  font-weight: 600;
+}
+
+.brand-text em {
+  font-style: italic;
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  padding: 8px;
+  color: var(--green-900);
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav > ul {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--ink);
+  padding: 6px 2px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.nav-link:hover {
+  color: var(--green-900);
+}
+
+.nav-link.active {
+  color: var(--green-900);
+  border-bottom-color: var(--brass);
+}
+
+/* Edge-to-edge CTA: flush against the far right of the browser, full header height */
+.header-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 32px;
+  background: var(--brass);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.92rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background 0.2s ease;
+}
+
+.header-cta:hover {
+  background: #c94b43;
+}
+
+.nav-cta-mobile {
+  display: none;
+}
+
+@media (max-width: 1120px) {
+  .header-cta {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .header-inner {
+    padding-right: 20px;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--paper-raised);
+    border-bottom: 1px solid var(--line);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px 24px;
+    gap: 8px;
+    display: none;
+  }
+
+  .nav-open {
+    display: flex;
+  }
+
+  .nav > ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 4px;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-cta-mobile {
+    display: flex;
+    margin-top: 8px;
+    width: 100%;
+    justify-content: center;
+  }
+}

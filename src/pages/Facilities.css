@@ -1,0 +1,46 @@
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.facility-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.facility-card .icon-badge {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-sm);
+  background: var(--sage);
+  color: var(--green-800);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.facility-card strong {
+  font-family: var(--font-display);
+  color: var(--green-900);
+  font-size: 1rem;
+}
+
+.facility-card p {
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+}
+
+@media (max-width: 900px) {
+  .facilities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .facilities-grid {
+    grid-template-columns: 1fr;
+  }
+}
