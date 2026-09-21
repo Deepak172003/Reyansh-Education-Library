@@ -1,6 +1,6 @@
 # Reyansh Education Library — Website
 
-A library website for Reyansha Library 24/7 in Bokaro Steel City — a disciplined, 24/7 reading
+A library website for Reyansha Library 7:00Am to 10:00pm in Bokaro Steel City — a disciplined, 24/7 reading
 room and study hall.
 **Home · About · Membership · Facilities · Gallery · Contact**
 
