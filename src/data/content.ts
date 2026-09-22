@@ -141,7 +141,7 @@ export const galleryImages = [
   { src: asset("/gallery/reading-room-3.webp"), caption: "Reading room, bright section" },
   { src: asset("/gallery/waiting-area.webp"), caption: "Waiting area" },
   { src: asset("/gallery/computer-desks.webp"), caption: "Computer terminals" },
-  { src: asset("/gallery/covered-parking.webp"), caption: "Covered parking corridor" },
+  { src: asset("/gallery/covered-parking .webp"), caption: "Covered parking corridor" },
   { src: asset("/gallery/outdoor-parking.webp"), caption: "Outdoor two-wheeler parking" },
   { src: asset("/gallery/reading-room-4.webp"), caption: "Reading room, main hall" },
 ];
